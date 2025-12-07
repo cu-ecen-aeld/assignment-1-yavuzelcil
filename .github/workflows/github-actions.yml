@@ -11,7 +11,7 @@ jobs:
         steps:
           - uses: actions/checkout@v3
             with:
-              submodules: recursive
+              submodules: true
           - name: Run unit test
             run: ./unit-test.sh
     full-test:
@@ -19,6 +19,6 @@ jobs:
         steps:
           - uses: actions/checkout@v3
             with:
-              submodules: recursive
+              submodules: true
           - name: Run full test
             run: ./full-test.sh
